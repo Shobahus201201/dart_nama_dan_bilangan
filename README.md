@@ -57,4 +57,4 @@ void main() {
 
 <li> Output Programnya: </li></p><br>
 
-![Output](Foto/1.png)</p> </br>
+![Foto](Foto/1.png)</p> </br>
