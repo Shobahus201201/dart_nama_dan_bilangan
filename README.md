@@ -1,1 +1,60 @@
-# dart_nama_dan_bilangan
+# Dart-NamadanBilangan
+
+| Nama    | Shobahus Solichin |
+| ------- | ----------- |
+| NIM     | 312010076       |
+| Kelas   | TI.20.A.1        |
+| Mata Kuliah   | Pemrograman Mobile  |
+| Dosen  | Muhammad Najamuddin Dwi Miharja, S.Kom, M.kom  |
+
+## Menghitung dan menampilkan nama dan nilai perulangan bilangan </p> </br>
+
+Soal Dart: </p></br>
+
+<li> Source Code: </p> </li>
+
+``` dart
+
+import 'dart:io';
+/*
+Nama : Shobahus Solichin
+NIM : 312010076
+Kelas : TI.20.A1
+*/
+
+// Fungsi angka pilihan user
+void result(var nama, int angka) {
+  var oddeven = (angka % 2 == 0) ? 'Genap' : 'Ganjil';
+
+  print("-----Hasil${oddeven}-----");
+  for (int i = 1; i <= angka; i++) {
+    //GENAP
+    if (oddeven == "Genap" && i % 2 == 0) {
+      print(nama);
+      print(i);
+    }
+    //GANJIL
+    if (oddeven == "Ganjil") {
+      print(nama);
+      print(i);
+    }
+  }
+}
+
+void main() {
+  // Input nama
+  stdout.write("Masukkan nama: ");
+  var nama = stdin.readLineSync();
+  // Input angka
+  stdout.write("Masukkan angka: ");
+  int? angka = int.parse(stdin.readLineSync()!);
+
+  // Panggil fungsi
+  result(nama, angka);
+}
+
+```
+
+<li> Output Programnya: </li></p><br>
+
+![Output](Foto/1.png)</p> </br>
